@@ -1,0 +1,32 @@
+print('=========================================')
+print('Selamat Datang di Pizza Hut kelompok 11 ')
+print('=========================================')
+print('\nSilahkan pilih menu topping pizza anda :')
+# Tampilkan toping pizza
+print("\nPilih topping pizza:")
+print("1. Frankfurter BBQ         = +Rp 35.000")
+print("2. Meat Monsta             = +Rp 42.000")
+print("3. Super Supreme           = +Rp 47.000")
+print("4. Super supreme chicken   = +Rp 53.000")
+
+
+#menentukan pengguna memilih toping
+toping_pizza = int(input("\nPilih nomor topping pizza yang diinginkan [1/2/3/4/5]: "))
+print('-------------------------')
+
+#Periksa pilihan topping pizza
+if toping_pizza == 1:
+    toping = "Frankfurter BBQ"
+    harga_toping = 35000
+elif toping_pizza == 2:
+    toping = "Meat Monsta"
+    harga_toping = 42000 
+elif toping_pizza == 3:
+    toping = "Super Supreme"
+    harga_toping = 47000
+elif toping_pizza == 4:
+    crust = "super Supreme Chicken"
+    harga_toping = 53000
+else:
+    print("Pilihan topping tidak valid.")
+    exit()
