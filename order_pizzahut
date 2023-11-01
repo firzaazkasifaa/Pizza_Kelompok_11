@@ -9,7 +9,6 @@ print("2. Meat Monsta             = +Rp 42.000")
 print("3. Super Supreme           = +Rp 47.000")
 print("4. Super supreme chicken   = +Rp 53.000")
 
-
 #menentukan pengguna memilih toping
 toping_pizza = int(input("Pilih nomor topping pizza yang diinginkan [1/2/3/4]: "))
 print('-------------------------')
@@ -29,4 +28,34 @@ elif toping_pizza == 4:
     harga_toping = 53000
 else:
     print("Pilihan toping tidak valid.")
+    exit()
+
+#Tampilkan pilihan crust pizza
+print("\nPilih crust pizza:")
+print("1. pan                    = +Rp 5.000")
+print("2. StuffedCrust Cheese    = +Rp 10.000")
+print("3. StufedCrust sausage    = +Rp 13.000")
+print("4. Cheesy Bites           = +Rp 15.000")
+print("5. Crown Crust            = +Rp 17.000")
+crust_choice = int(input("Pilih nomor crust pizza yang diinginkan [1/2/3/4/5]: "))
+print('-------------------------')
+
+# Memeriksa pilihan crust pizza
+if crust_choice == 1:
+    crust = "pan"
+    harga_crust = 5000
+elif crust_choice == 2:
+    crust = "StuffedCrust Cheese"
+    harga_crust = 10000
+elif crust_choice == 3:
+    crust = "StufedCrust sausage "
+    harga_crust = 13000
+elif crust_choice == 4:
+    crust = "Cheesy Bites"
+    harga_crust = 15000
+elif crust_choice == 5:
+    crush = "Crown Crust"
+    harga_crust = 17000
+else:
+    print("Pilihan crust tidak valid.")
     exit()
