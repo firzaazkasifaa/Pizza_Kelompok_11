@@ -93,3 +93,14 @@ elif topping_keju == 'tidak' :
 else :
     print("Pilihan topping keju tidak valid")
     exit()
+
+harga_total = harga_toping + harga_crust + harga_size + harga_topping_keju
+
+# Tampilkan ringkasan pesanan
+print('\n======================')
+print("Pesanan Anda:")
+print(f"toping              : {toping}")
+print(f"Crust               : {crust}")
+print(f"Ukuran              : {size}")
+print(f"Tambahan topping keju: {topping_keju}")
+print("Harga Total:", harga_total)
