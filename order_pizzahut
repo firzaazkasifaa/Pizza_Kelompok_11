@@ -80,3 +80,16 @@ elif size_choice == 3:
 else:
     print("Pilihan ukuran tidak valid.")
     exit()
+
+# Periksa tambahan topping keju
+topping_keju = input("Tambahkan Topping keju(ya/tidak): ")
+
+if topping_keju.lower() == "ya":
+    harga_topping_keju = 13000
+    print("Dengan tambahan keju")
+elif topping_keju == 'tidak' :
+    harga_topping_keju = 0
+    print("Tanpa tambahan keju")
+else :
+    print("Pilihan topping keju tidak valid")
+    exit()
